@@ -40,7 +40,7 @@ public class SecurityConfig {
         http//authorizeRequests().anyRequest().authenticated().and().httpBasic();
                 .csrf().disable()
                 .authorizeHttpRequests() //.authorizeRequests() min 1:25
-                .requestMatchers("api/v1/auth/**")   //.antMatchers("/**/auth/**")
+                .requestMatchers("/*/*/auth/**")   //.antMatchers("/**/auth/**")
                 .permitAll()
                 .anyRequest()
                 .authenticated()
